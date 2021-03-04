@@ -888,28 +888,28 @@ label.error {
   z-index: 1;
   max-width: 320px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
-.contacts__left-title h2 {
+.contacts__left-title h2.orange-line {
+  position: relative;
   font-size: 20px;
   line-height: 1;
   font-weight: 700;
   color: #333;
 }
 
-.contacts__left-title span {
-  position: relative;
-}
-
-.contacts__left-title span::after {
+.contacts__left-title h2.orange-line::after {
   content: "";
+  position: absolute;
+  left: -2px;
+  bottom: 0px;
   width: 103%;
-  bottom: 1px;
+  height: 7px;
 }
 
 .contacts__left-subtitle {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .contacts__left-subtitle h3 {
@@ -921,7 +921,7 @@ label.error {
 
 .contacts__list {
   display: inline-block;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
 }
 
 .contacts__list a {
@@ -2058,15 +2058,14 @@ label.error {
     margin-bottom: 25px;
   }
 
-  .contacts__left-title h2 {
+  .contacts__left-title h2.orange-line {
     font-size: 22px;
   }
 
-  .contacts__left-title span::after {
+  .contacts__left-title h2.orange-line::after {
     content: "";
-    width: 103%;
+    position: absolute;
     bottom: 1px;
-    left: -2px;
   }
 
   .contacts__left-subtitle {
@@ -2441,15 +2440,8 @@ label.error {
     margin-bottom: 42px;
   }
 
-  .contacts__left-title h2 {
+  .contacts__left-title h2.orange-line {
     font-size: 36px;
-  }
-
-  .contacts__left-title span::after {
-    content: "";
-    width: 103%;
-    bottom: 5px;
-    left: -5px;
   }
 
   .contacts__left-subtitle {
