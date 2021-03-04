@@ -1,0 +1,123 @@
+.reviews {
+    padding: 50px 0 100px;
+}
+.reviews__title.orange-line {
+    position: relative;
+    z-index: 1;
+}
+.section-carousel {
+    margin: 0 auto;
+}
+.slider{
+    padding-left: 13px;
+    font-family: "Roboto-ThinItalic";
+    font-size: 18px;
+    line-height: 29px;
+    &::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        top: 0;
+        left: 0;
+        background-color: #B2B2B2;;
+        }
+}
+.reviews__title {
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.owl-nav {
+    position: relative;
+    margin-top: 20px;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 47%;
+    
+    background-image: url("../img/icn/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--pink);
+    transition: 0.2s ease-in;
+
+    }
+    &:hover::after {
+        opacity: 0.5;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+    
+}
+.owl-carousel .owl-nav button.owl-next {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    position: absolute;
+    right: 47%;
+
+    background-image: url("../img/icn/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--pink);
+    transition: 0.2s ease-in;
+
+    }
+    &:hover::after {
+        opacity: 0.5;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+
+}
+.clients-name {
+    margin-top: 10px;
+    width: 117px;
+    position: relative;
+    font: 100% $font-stack;
+    font-size: 15px;
+    color: #333;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 122px;
+        border-radius: 50%;
+        border: 2px solid var(--pink);
+        background-image: url(../img/icn/icon-dots.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+}
