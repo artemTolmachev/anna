@@ -1,0 +1,121 @@
+form.consultation__form {
+  margin-top: 20px;
+    width: 100%;
+    
+    @media(min-width: 768px) {
+      margin-top: 0;
+      width: 50%;
+    }
+    @media(min-width:1200px) {
+      
+      max-width: 584px;
+    }
+    }
+.form-item {
+      width: 100%;
+      &:first-child {
+        margin-bottom: 11px;
+      }
+      @media(min-width: 768px) {
+        // width: 173px;
+        &:first-child {
+          margin-bottom: 0;
+        }
+      }
+      @media(min-width:1200px) {
+        // width: 280px;
+        font-size: 18px;
+      }
+      .btn.light-btn {
+        margin-top: 15px;
+        transition: .5s;
+        &:hover {
+        background-color: var(--pink);
+        color: white;
+        }
+
+        @media(min-width: 768px) {
+          margin-top: 25px;
+        }
+        @media(min-width:1200px) {
+        margin-top: 25px;
+ 
+        }
+    }
+ 
+ }
+.form-item.message {
+  width: 100%;
+
+  @media(min-width: 768px) {
+    
+  }
+  @media(min-width:1200px) {
+  
+  }
+} 
+.form-field {
+  padding-left: 12px;
+  width: 100%;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 1px;
+  font: 100% $font-stack;
+  font-size: 12px;
+  line-height: 1;
+  
+
+    @media(min-width: 768px) {
+    height: 28px;
+    
+    }
+  @media(min-width:1200px) {
+    padding-left: 15px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+  textarea.form-field {
+    width: 100%;
+    padding-top: 10px;
+    height: 130px;
+    }
+  input {
+    appearance: none;
+  }
+
+
+
+.input__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 11px;
+
+  @media(min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+  @media(min-width:1200px) {
+    margin-bottom: 25px;
+  }
+  .form-item {
+    
+    @media(min-width: 768px) {
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
+    @media(min-width:1200px) {
+      &:first-child {
+        margin-right: 25px;
+      }
+    }
+  }
+}
+
+label.error {  //(этот класс задает браузер)
+  color: red;
+  font-size: 10px;
+  }

@@ -287,6 +287,7 @@ body {
 }
 
 body.nonescroll {
+  height: 100%;
   overflow: hidden;
 }
 
@@ -1947,7 +1948,7 @@ label.error {
 
   .more30__inf-title.orange-line h2 {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .more30__inf-title.orange-line::after {
@@ -1974,20 +1975,12 @@ label.error {
     width: 50%;
   }
 
-  .form-item {
-    width: 173px;
-  }
-
   .form-item:first-child {
     margin-bottom: 0;
   }
 
   .form-item .btn.light-btn {
     margin-top: 25px;
-  }
-
-  .form-item.message {
-    width: 357px;
   }
 
   .form-field {
@@ -2059,7 +2052,7 @@ label.error {
   }
 
   .contacts__left-title h2.orange-line {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .contacts__left-title h2.orange-line::after {
@@ -2379,16 +2372,11 @@ label.error {
   }
 
   .form-item {
-    width: 280px;
     font-size: 18px;
   }
 
   .form-item .btn.light-btn {
     margin-top: 25px;
-  }
-
-  .form-item.message {
-    width: 572px;
   }
 
   .form-field {
