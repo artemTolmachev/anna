@@ -189,7 +189,7 @@
 
 .header__title {
   font-weight: 200;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1.2;
   color: white;
 }
@@ -244,7 +244,7 @@
 .under__header-title {
   font: 100% Montserrat Alternates, sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 20px;
   color: #fff;
 }
@@ -252,7 +252,7 @@
 .under__header-subtitle {
   margin-top: 34px;
   font-weight: 300;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 16px;
   color: #fff;
   opacity: 0.7;
@@ -364,7 +364,7 @@ textarea {
   font-weight: 300;
   padding: 0 25px;
   height: 40px;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 38px;
   -webkit-transition: .5s;
   -o-transition: .5s;
@@ -519,7 +519,7 @@ h2 {
 
 .cards__item p {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.2;
 }
 
@@ -628,7 +628,7 @@ h2 {
 
 .more30__inf-subtitle p {
   font-family: Roboto-ThinItalic;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.2;
   color: #000;
 }
@@ -824,7 +824,7 @@ label.error {
 
 .consultation__inf-title h2 {
   font: 100% Roboto, sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   line-height: 1;
   color: #fff;
 }
@@ -839,7 +839,7 @@ label.error {
 
 .consultation__inf-text p {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   color: #BDBDBD;
   text-align: justify;
@@ -850,7 +850,7 @@ label.error {
 }
 
 .contacts {
-  padding: 48px 0 25px;
+  padding: 60px 0 20px;
   color: #333333;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(213, 226, 251, 0.28)), to(rgba(213, 226, 251, 0)));
   background: -o-linear-gradient(top, rgba(213, 226, 251, 0.28) 0%, rgba(213, 226, 251, 0) 100%);
@@ -900,7 +900,7 @@ label.error {
 .contacts__list a {
   font: Montserrat Alternates, sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1;
   color: var(--pink);
   -webkit-transition: .2s ease-in;
@@ -944,11 +944,11 @@ label.error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 3px;
+  margin-top: 15px;
 }
 
 .contacts .social__linc a + a {
-  margin-left: 0;
+  margin-left: 10px;
 }
 
 .contacts .social__linc a {
@@ -963,8 +963,8 @@ label.error {
           align-items: center;
   top: 0;
   left: 0;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #fff;
   -webkit-transition: .5s;
@@ -988,18 +988,19 @@ label.error {
   padding-right: 3px;
   padding-top: 2px;
   margin-left: 4px;
+  margin-left: 16px;
 }
 
 .contacts .social__linc svg {
-  width: 18px;
+  width: 25px;
 }
 
 .contacts .social__linc .fa-viber {
-  width: 20px;
+  width: 30px;
 }
 
 .contacts .social__linc .fa-facebook-f {
-  width: 10px;
+  width: 16px;
 }
 
 .contacts .social__linc path {
@@ -1020,7 +1021,7 @@ label.error {
 .slider {
   padding-left: 13px;
   font-family: "Roboto-ThinItalic";
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -1125,7 +1126,7 @@ label.error {
   width: 86px;
   position: relative;
   font: 100% Roboto, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   color: #333;
 }
 
@@ -1150,14 +1151,14 @@ label.error {
 .footer h3 {
   font: 100% Roboto, sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1;
   color: #FFFFFF;
 }
 
 .footer a {
   font: 100% Roboto, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 200;
   color: #FFFFFF;
 }
@@ -1171,7 +1172,7 @@ label.error {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 35px 0 30px;
-  width: 190px;
+  width: 280px;
   margin: 0 auto;
 }
 
@@ -1188,7 +1189,7 @@ label.error {
 .foote__left-text p {
   font: 100% Roboto, sans-serif;
   font-weight: 100;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.5;
   text-align: justify;
   color: #FFFFFF;
@@ -1230,7 +1231,7 @@ label.error {
 .footer__left-list li a {
   font: 100% Montserrat Alternates, sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1;
   color: white;
 }
@@ -1303,22 +1304,22 @@ label.error {
 .footer__right li {
   font: 100% Roboto, sans-serif;
   font-weight: 200;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 2;
   color: #FFFFFF;
 }
 
 .footer__links {
-  width: 146px;
+  width: 160px;
 }
 
 .footer__links ul {
   padding-left: 10px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .footer__links li + li {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .footer__links a {
@@ -1386,7 +1387,7 @@ label.error {
   font: 100% Roboto, sans-serif;
   text-align: center;
   font-weight: 100;
-  font-size: 11px;
+  font-size: 12px;
   line-height: 19px;
   color: #FFFFFF;
 }
@@ -1575,6 +1576,10 @@ label.error {
   margin-top: 20px;
 }
 
+.mobile-menu__wrapper {
+  padding-left: 20px;
+}
+
 .mobile-menu__logo {
   position: relative;
   font-family: 'Lobster';
@@ -1755,10 +1760,6 @@ label.error {
     display: none;
   }
 
-  .header__title {
-    font-size: 25px;
-  }
-
   .header__subtitle {
     margin-top: 5px;
     display: block;
@@ -1781,7 +1782,7 @@ label.error {
   }
 
   .header__title {
-    font-size: 38px;
+    font-size: 40px;
   }
 
   .under__header {
@@ -1816,7 +1817,7 @@ label.error {
     margin-top: 0;
     width: 449px;
     font-weight: 100;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
 
@@ -1827,7 +1828,7 @@ label.error {
 
   .btn {
     margin-top: 25px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   h2 {
@@ -1854,17 +1855,13 @@ label.error {
 
   .cards__wrapper .cards__item + .cards__item {
     margin-top: 0;
-    margin-left: 51px;
+    margin-left: 15px;
   }
 
   .cards__item {
     padding: 20px 17px 30px;
-    width: 196px;
-    height: 242px;
-  }
-
-  .cards__item p {
-    font-size: 11px;
+    width: 222px;
+    height: 294px;
   }
 
   .cards__item::after {
@@ -1892,7 +1889,7 @@ label.error {
 
   .cards__item-title {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .more30__wrapper {
@@ -1983,7 +1980,7 @@ label.error {
   }
 
   .consultation__inf-title h2 {
-    font-size: 22px;
+    font-size: 28px;
   }
 
   .consultation__inf-title.pink-line::after {
@@ -2023,6 +2020,10 @@ label.error {
     margin-bottom: 10px;
   }
 
+  .contacts__left-subtitle h3 {
+    font-size: 20px;
+  }
+
   .contacts__list li + li {
     margin-top: 6px;
   }
@@ -2031,8 +2032,12 @@ label.error {
     margin-bottom: 15px;
   }
 
+  .contacts__list a {
+    font-size: 18px;
+  }
+
   .map-holder {
-    max-width: 200px;
+    max-width: 300px;
     height: 130px;
   }
 
@@ -2046,49 +2051,12 @@ label.error {
     margin-top: 15px;
   }
 
-  .contacts .social__linc a + a {
-    margin-left: 10px;
-  }
-
-  .contacts .social__linc a:nth-child(4) {
-    margin-left: 16px;
-  }
-
-  .contacts .social__linc a {
-    width: 40px;
-    height: 40px;
-  }
-
-  .contacts .social__linc svg {
-    width: 22px;
-  }
-
-  .contacts .social__linc .fa-viber {
-    width: 25px;
-  }
-
-  .contacts .social__linc .fa-facebook-f {
-    width: 14px;
-  }
-
-  .contacts {
-    margin-top: 0;
-  }
-
-  .slider {
-    font-size: 15px;
-  }
-
   .reviews__title {
     margin-bottom: 16px;
   }
 
-  .footer h3 {
-    font-size: 12px;
-  }
-
   .footer a {
-    font-size: 9px;
+    font-size: 16px;
   }
 
   .footer__wrapper {
@@ -2104,7 +2072,7 @@ label.error {
   }
 
   .foote__left-text {
-    width: 300px;
+    display: none;
   }
 
   .foote__left-text p {
@@ -2121,7 +2089,7 @@ label.error {
   }
 
   .footer__left-list li a {
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .footer__left-list li:first-child:after {
@@ -2131,7 +2099,7 @@ label.error {
   }
 
   .footer__right {
-    width: 400px;
+    width: 420px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2142,18 +2110,13 @@ label.error {
     margin-top: 0;
   }
 
-  .footer__right li {
-    font-size: 9px;
-  }
-
   .footer__contacts {
-    width: 178px;
+    width: 228px;
     margin-top: 0;
   }
 
   .footer__times {
-    width: 150px;
-    margin-top: 0;
+    display: none;
   }
 }
 
@@ -2172,10 +2135,6 @@ label.error {
     width: 100%;
   }
 
-  .header__title {
-    font-size: 54px;
-  }
-
   .header__subtitle {
     font-size: 20px;
   }
@@ -2192,10 +2151,6 @@ label.error {
     padding: 30px 23px 42px;
     width: 280px;
     height: 346px;
-  }
-
-  .cards__item p {
-    font-size: 15px;
   }
 
   .cards__item::before {
@@ -2219,11 +2174,6 @@ label.error {
     margin-bottom: 23px;
     width: 35px;
     height: 35px;
-  }
-
-  .cards__item-title {
-    margin-bottom: 25px;
-    font-size: 20px;
   }
 
   .more30__img {
@@ -2260,7 +2210,12 @@ label.error {
   }
 
   .footer__right {
-    width: 500px;
+    width: 600px;
+  }
+
+  .footer__times {
+    display: block;
+    margin-top: 0;
   }
 }
 
@@ -2316,7 +2271,7 @@ label.error {
 
   .under__header-title {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 29px;
   }
 
@@ -2346,7 +2301,7 @@ label.error {
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 40px;
     line-height: 1;
   }
 
@@ -2404,7 +2359,7 @@ label.error {
 
   .cards__item-title {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .more30 {
@@ -2430,16 +2385,12 @@ label.error {
     margin-bottom: 8px;
   }
 
-  .more30__inf-subtitle p {
-    font-size: 22px;
-  }
-
   .more30__inf-subtitle span {
     font-size: 30px;
   }
 
   .more30__inf-text p {
-    font-size: 17px;
+    font-size: 18px;
   }
 
   form.consultation__form {
@@ -2473,7 +2424,7 @@ label.error {
   }
 
   .consultation__inf-title h2 {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .consultation__inf-title.pink-line::after {
@@ -2515,28 +2466,11 @@ label.error {
     height: 213px;
   }
 
-  .contacts .social__linc svg {
-    width: 25px;
-  }
-
-  .contacts .social__linc .fa-viber {
-    width: 30px;
-  }
-
-  .contacts .social__linc .fa-facebook-f {
-    width: 16px;
-  }
-
-  .contacts {
-    margin-top: 15px;
-  }
-
   .reviews {
     padding: 50px 0 100px;
   }
 
   .slider {
-    font-size: 18px;
     line-height: 2;
   }
 
@@ -2566,24 +2500,17 @@ label.error {
     left: 122px;
   }
 
-  .footer h3 {
-    font-size: 18px;
-  }
-
-  .footer a {
-    font-size: 14px;
-  }
-
   .footer__wrapper {
     padding: 65px 0 85px;
   }
 
   .foote__left-text {
-    width: 470px;
+    display: block;
+    width: 434px;
   }
 
   .foote__left-text p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .footer__left-contacts {
@@ -2608,10 +2535,6 @@ label.error {
     width: 635px;
   }
 
-  .footer__right li {
-    font-size: 14px;
-  }
-
   .footer__links ul {
     padding-left: 10px;
     margin-top: 21px;
@@ -2627,6 +2550,7 @@ label.error {
 
   .footer__times {
     width: 190px;
+    margin-top: 0;
   }
 
   .footer__times ul {
