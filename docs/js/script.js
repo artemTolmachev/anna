@@ -86,6 +86,16 @@ function testWebP(callback) {   // функция присваевает кла�
 
     })
 
+    $('#back-top').hide();  //стрелка вверх
+$(window).scroll(function(){
+if($(this).scrollTop() > 300 ){
+  $('#back-top').fadeIn();
+}
+else{
+$('#back-top').fadeOut();
+}
+}); 
+
     
         
    
