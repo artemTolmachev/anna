@@ -86,15 +86,79 @@ function testWebP(callback) {   // функция присваевает кла�
 
     })
 
-    $('#back-top').hide();  //стрелка вверх
-$(window).scroll(function(){
-if($(this).scrollTop() > 300 ){
-  $('#back-top').fadeIn();
-}
-else{
-$('#back-top').fadeOut();
-}
-}); 
+        $('#back-top').hide();  //стрелка вверх
+    $(window).scroll(function(){
+    if($(this).scrollTop() > 300 ){
+    $('#back-top').fadeIn();
+    }
+    else{
+    $('#back-top').fadeOut();
+    }
+    }); 
+
+    $(document).ready(function(){
+
+    
+        //form validate
+        $('.form').validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true
+                },
+                subject: {
+                    required: true
+                },
+                message: {
+                    required: true
+                },
+                clothes: {
+                    required: true
+                },
+                phone: {
+                    required: true
+                },
+            },
+            messages: {       // (скрипт для дополнительных замечаний)
+                email: {
+                    required: 'Введите email',
+                    email: 'отсутствует символ @'
+                },
+                subject: {
+                    required: 'Введите тему сообщения'
+                },
+                message: {
+                    required: 'Введите текст сообщения'
+                },
+                clothes: {
+                    required: 'Введите тип одежды'
+                },
+                phone: {
+                    required: 'Введите номер телефона'
+                }
+            },
+          submitHandler: function (form) {
+                ajaxFormSubmit();
+            }
+        })
+        // функция AJAX запроса на сервер 
+        function ajaxFormSubmit() {
+            let string = $(".contact-form").serialize(); //сохраняем данные введенные в форму в строку
+        // формируем ajax запрос
+        $.ajax({
+            type: "POST", //тип запросса - POST
+            url: "php/mail.php",//куда отправляем запрос
+            data: string, //какие данные щтправляем,в данном случае переменнная string
+            // функция если все прошло успешно
+            success: function (html) {
+                $(".contact-form").slideUp(800);
+                $('#answer').html(html);
+            }
+        });
+        return false;
+        }
+        })
+        
 
     
         
