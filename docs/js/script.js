@@ -65,21 +65,21 @@ function testWebP(callback) {   // функция присваевает кла�
         const nonescroll = document.querySelector('body'); //блокировка скролла при активном моб меню
     
     
-        toggleMenu.addEventListener('touchstart', function(){
+        toggleMenu.addEventListener('click', function(){
             this.classList.toggle('active');
             mobMenu.classList.toggle('active-menu');
             overlay.classList.toggle('active');
             nonescroll.classList.toggle('nonescroll');
             
         });
-        mobMenu.addEventListener('touchstart', function(){
+        mobMenu.addEventListener('click', function(){
             this.classList.remove('active-menu');
             toggleMenu.classList.remove('active');
             overlay.classList.remove('active');
             nonescroll.classList.remove('nonescroll');
             
         });
-        overlay.addEventListener('touchstart', function(){
+        overlay.addEventListener('click', function(){
             this.classList.remove('active');
             toggleMenu.classList.remove('active');
             mobMenu.classList.remove('active-menu');
