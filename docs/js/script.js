@@ -93,21 +93,21 @@ function testWebP(callback) {   // функция присваевает кла�
             mobMenu.classList.toggle('active-menu');
             overlay.classList.toggle('active');
             nonescroll.classList.toggle('nonescroll');
-            
+            return false;
         });
         mobMenu.addEventListener('touchend', function(){
             this.classList.remove('active-menu');
             toggleMenu.classList.remove('active');
             overlay.classList.remove('active');
             nonescroll.classList.remove('nonescroll');
-            
+            return false;
         });
         overlay.addEventListener('touchend', function(){
             this.classList.remove('active');
             toggleMenu.classList.remove('active');
             mobMenu.classList.remove('active-menu');
             nonescroll.classList.remove('nonescroll');
-            
+            return false;
         });
 
     })
