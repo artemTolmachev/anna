@@ -65,7 +65,7 @@ function testWebP(callback) {   // функция присваевает кла�
         const nonescroll = document.querySelector('body'); //блокировка скролла при активном моб меню
     
     
-        toggleMenu.addEventListener('click', function(){
+        toggleMenu.addEventListener('touchstart', function(){
             this.classList.toggle('active');
             mobMenu.classList.toggle('active-menu');
             overlay.classList.toggle('active');
