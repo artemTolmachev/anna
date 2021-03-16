@@ -65,21 +65,21 @@ function testWebP(callback) {   // функция присваевает кла�
         const nonescroll = document.querySelector('body'); //блокировка скролла при активном моб меню
     
     
-        toggleMenu.addEventListener('click', function(){
+        toggleMenu.addEventListener('touchstart', function(){
             this.classList.toggle('active');
             mobMenu.classList.toggle('active-menu');
             overlay.classList.toggle('active');
             nonescroll.classList.toggle('nonescroll');
             
         });
-        mobMenu.addEventListener('click', function(){
+        mobMenu.addEventListener('touchstart', function(){
             this.classList.remove('active-menu');
             toggleMenu.classList.remove('active');
             overlay.classList.remove('active');
             nonescroll.classList.remove('nonescroll');
             
         });
-        overlay.addEventListener('click', function(){
+        overlay.addEventListener('touchstart', function(){
             this.classList.remove('active');
             toggleMenu.classList.remove('active');
             mobMenu.classList.remove('active-menu');
@@ -165,24 +165,24 @@ function testWebP(callback) {   // функция присваевает кла�
         
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-// function myFunction() {
-//     document.getElementById("myDropdown").classList.toggle("show");
-// }
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
 // Close the dropdown menu if the user clicks outside of it
-// window.onclick = function(event) {
-//   if (!event.target.matches('.drop__btn')) {
+window.onclick = function(event) {
+  if (!event.target.matches('.drop__btn')) {
 
-//     var dropdowns = document.getElementsByClassName("dropdown-content");
-//     var i;
-//     for (i = 0; i < dropdowns.length; i++) {
-//       var openDropdown = dropdowns[i];
-//       if (openDropdown.classList.contains('show')) {
-//         openDropdown.classList.remove('show');
-//       }
-//     }
-//   }
-// }
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
     
         
    
