@@ -87,28 +87,6 @@ function testWebP(callback) {   // функция присваевает кла�
             
         });
 
-        //iphone
-        toggleMenu.addEventListener('touched', function(){
-            this.classList.toggle('active');
-            mobMenu.classList.toggle('active-menu');
-            overlay.classList.toggle('active');
-            nonescroll.classList.toggle('nonescroll');
-            return false;
-        });
-        mobMenu.addEventListener('touchend', function(){
-            this.classList.remove('active-menu');
-            toggleMenu.classList.remove('active');
-            overlay.classList.remove('active');
-            nonescroll.classList.remove('nonescroll');
-            return false;
-        });
-        overlay.addEventListener('touchend', function(){
-            this.classList.remove('active');
-            toggleMenu.classList.remove('active');
-            mobMenu.classList.remove('active-menu');
-            nonescroll.classList.remove('nonescroll');
-            return false;
-        });
 
     })
 
@@ -187,24 +165,24 @@ function testWebP(callback) {   // функция присваевает кла�
         
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
+// function myFunction() {
+//     document.getElementById("myDropdown").classList.toggle("show");
+// }
 
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.drop__btn')) {
+// window.onclick = function(event) {
+//   if (!event.target.matches('.drop__btn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
+//     var dropdowns = document.getElementsByClassName("dropdown-content");
+//     var i;
+//     for (i = 0; i < dropdowns.length; i++) {
+//       var openDropdown = dropdowns[i];
+//       if (openDropdown.classList.contains('show')) {
+//         openDropdown.classList.remove('show');
+//       }
+//     }
+//   }
+// }
     
         
    
