@@ -8,22 +8,33 @@ $(document).ready(function(){
     const overlay = document.querySelector('.mobile-overlay'); //затемняющий фон при активном мобильном меню
     const nonescroll = document.querySelector('body'); //блокировка скролла при активном моб меню
 
+    var iOS = navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    var event = "click";
+    
+    if(iOS != null)
+        event = "touchstart";
+    
+    // $(function() {
+    //     $(document).on(event, ".element_class", function(e) {
+    //         //действия
+    //     });
+    // });
 
-    toggleMenu.addEventListener('touchstart', function(){
+    toggleMenu.addEventListener('touchstart', function(e){
         this.classList.toggle('active');
         mobMenu.classList.toggle('active-menu');
         overlay.classList.toggle('active');
         nonescroll.classList.toggle('nonescroll');
         
     });
-    mobMenu.addEventListener('touchstart', function(){
+    mobMenu.addEventListener('touchstart', function(e){
         this.classList.remove('active-menu');
         toggleMenu.classList.remove('active');
         overlay.classList.remove('active');
         nonescroll.classList.remove('nonescroll');
         
     });
-    overlay.addEventListener('touchstart', function(){
+    overlay.addEventListener('touchstart', function(e){
         this.classList.remove('active');
         toggleMenu.classList.remove('active');
         mobMenu.classList.remove('active-menu');
