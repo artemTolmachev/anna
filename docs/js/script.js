@@ -9,21 +9,21 @@ $(document).ready(function(){
     const nonescroll = document.querySelector('body'); //блокировка скролла при активном моб меню
 
 
-    toggleMenu.addEventListener('click', function(){
+    toggleMenu.addEventListener('touchstart', function(){
         this.classList.toggle('active');
         mobMenu.classList.toggle('active-menu');
         overlay.classList.toggle('active');
         nonescroll.classList.toggle('nonescroll');
         
     });
-    mobMenu.addEventListener('click', function(){
+    mobMenu.addEventListener('touchstart', function(){
         this.classList.remove('active-menu');
         toggleMenu.classList.remove('active');
         overlay.classList.remove('active');
         nonescroll.classList.remove('nonescroll');
         
     });
-    overlay.addEventListener('click', function(){
+    overlay.addEventListener('touchstart', function(){
         this.classList.remove('active');
         toggleMenu.classList.remove('active');
         mobMenu.classList.remove('active-menu');
