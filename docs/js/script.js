@@ -14,33 +14,36 @@ $(document).ready(function(){
     if(iOS != null)
         event = "touchstart";
     
-    // $(function() {
-    //     $(document).on(event, ".element_class", function(e) {
-    //         //действия
-    //     });
-    // });
+    $(function() {
+        $(document).on(event, ".toggle-menu", function(e) {
+            this.classList.toggle('active');
+            mobMenu.classList.toggle('active-menu');
+            overlay.classList.toggle('active');
+            nonescroll.classList.toggle('nonescroll');
+        });
+    });
 
-    toggleMenu.addEventListener('touchstart', function(e){
-        this.classList.toggle('active');
-        mobMenu.classList.toggle('active-menu');
-        overlay.classList.toggle('active');
-        nonescroll.classList.toggle('nonescroll');
+    // toggleMenu.addEventListener('touchstart', function(e){
+    //     this.classList.toggle('active');
+    //     mobMenu.classList.toggle('active-menu');
+    //     overlay.classList.toggle('active');
+    //     nonescroll.classList.toggle('nonescroll');
         
-    });
-    mobMenu.addEventListener('touchstart', function(e){
-        this.classList.remove('active-menu');
-        toggleMenu.classList.remove('active');
-        overlay.classList.remove('active');
-        nonescroll.classList.remove('nonescroll');
+    // });
+    // mobMenu.addEventListener('touchstart', function(e){
+    //     this.classList.remove('active-menu');
+    //     toggleMenu.classList.remove('active');
+    //     overlay.classList.remove('active');
+    //     nonescroll.classList.remove('nonescroll');
         
-    });
-    overlay.addEventListener('touchstart', function(e){
-        this.classList.remove('active');
-        toggleMenu.classList.remove('active');
-        mobMenu.classList.remove('active-menu');
-        nonescroll.classList.remove('nonescroll');
+    // });
+    // overlay.addEventListener('touchstart', function(e){
+    //     this.classList.remove('active');
+    //     toggleMenu.classList.remove('active');
+    //     mobMenu.classList.remove('active-menu');
+    //     nonescroll.classList.remove('nonescroll');
         
-    });
+    // });
 
     function testWebP(callback) {   // функция присваевает класс webp для body если браузер поддерживает формат webp
 
