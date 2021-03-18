@@ -1700,6 +1700,10 @@ label.error {
   cursor: pointer;
 }
 
+.toggle-menu a {
+  cursor: pointer;
+}
+
 .toggle-menu span {
   position: relative;
   display: inline-block;
