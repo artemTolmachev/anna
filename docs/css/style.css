@@ -1534,6 +1534,7 @@ label.error {
 }
 
 .footer__links ul {
+  margin-left: 10px;
   margin-top: 20px;
 }
 
@@ -2671,6 +2672,10 @@ label.error {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-top: 0;
+  }
+
+  .footer__links ul {
+    margin-left: 0;
   }
 
   .footer__contacts {
