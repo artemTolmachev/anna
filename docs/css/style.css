@@ -2320,6 +2320,7 @@ label.error {
 
 @media (min-width: 768px) {
   .header__top .header__top-logo {
+    display: block;
     padding: 2px 7px 0px 7px;
     margin-left: 0;
     margin-right: auto;
