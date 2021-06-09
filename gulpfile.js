@@ -6,6 +6,7 @@
 //должно получитья примерно так: [] Using gulpFile... []starting 'default'... []finished 'default'after..
 //если не получилось то чистим кэш  npm cache clean --force 
 //и устанавливаем заново: npm i npm -g , установку галп глобально , установку галп в проект , повторяем проверку 
+const { on } = require("gulp");
 const rename = require('gulp-rename');
 const svgSprite = require('gulp-svg-sprite');
 
@@ -22,19 +23,21 @@ let path = {
         html: project_folder+"/",
         css: project_folder+"/css/",
         js: project_folder+"/js/",
+        libs: project_folder+"/libs/",
         img: project_folder+"/img/",
         fonts: project_folder+"/fonts/",
-  
+        php: project_folder+"/php/",
 
     },
 
     src:{ //путь к папки с которой галп берет файлы для обработки
-        html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
+        html: source_folder + "/*.html",
         css: source_folder + "/scss/style.scss",
         js: source_folder + "/js/script.js",
+        libs: source_folder + "/libs/**/*.{js,css}",
         img: source_folder + "/img/**/*.{png,jpg,gif,ico,svg,webp}",
         fonts: source_folder + "/fonts/*.{ttf,otf,eot,svg,woff}",
-       
+        php: source_folder + "/php/*.{htaccess,html,php}",
     },
 
     watch:{//путь по которому галп будет прослушивать файлы изменившиеся
@@ -49,7 +52,7 @@ let path = {
 
 let {src, dest} = require('gulp'),
 gulp = require('gulp'),
-browsersync = require("browser-sync").create(),//обновляет страницу(npm i browser-sync --save-dev)
+browsersync = require("browser-sync").create(), //обновляет страницу(npm i browser-sync --save-dev)
 fileinqlude = require('gulp-file-include'),
 del = require("del"), //объявляем перменную для чистки папки dest(npm i del --save-dev )
 scss = require("gulp-sass"),//объявляем перменную для scss (npm i gulp-sass --save-dev)
@@ -68,15 +71,16 @@ function browserSync(params) { //функция обновляет страни�
     browsersync.init({
         server:{
             baseDir: "./"+ project_folder +"/"
+            
         },
-        port: 3000,
         notify: false //выключаем всплывающую табличку обновления
     })
+   
 }
+
 
 function html() { 
     return src(path.src.html)
-    .pipe(fileinqlude())//для сборки в один файл (групировка)
     .pipe(webphtml())//сокращение кода до стандартной записи для <img> для webp изображений
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream())
@@ -155,8 +159,18 @@ function images() {
         .pipe(dest(path.build.fonts))
         .pipe(browsersync.stream())
     }
-   
 
+    function libs () { 
+        gulp.src(path.src.libs)
+        .pipe(dest(path.build.libs))
+        .pipe(browsersync.stream())
+    }
+   
+    function php () { 
+        gulp.src(path.src.php)
+        .pipe(dest(path.build.php))
+        .pipe(browsersync.stream())
+    }
 gulp.task('svgSprites', function() { //фунция для соединения иконок svg в срайты
     return gulp.src([source_folder + '/iconsprite/*.svg']) //копируем иконки с исходников
         .pipe(svgSprites({
@@ -183,9 +197,11 @@ function clean(params) {
     return del(path.clean); //путь к папки dest, функция чистит папку dest
 }
 
-let build = gulp.series(clean, gulp.parallel( js, css, html, images, fonts));// папка чистится и создается заново
+let build = gulp.series(clean, gulp.parallel( js, css, html, images, fonts, php, libs));// папка чистится и создается заново
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.libs = libs;
+exports.php = php;
 exports.fonts = fonts; 
 exports.images = images;  
 exports.js = js;    

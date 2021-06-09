@@ -1,8 +1,15 @@
 .more30 {
     padding: 25px 0 35px;
-    @media(min-width: 768px) {
-    
-    }
+
+     span.orange-line {
+        position: relative;
+        
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 3px;
+            }
+     }
     @media(min-width:1200px) {
         margin-top: 0;
     padding-bottom: 165px;
@@ -78,62 +85,22 @@
         
     }
 }
-.more30__inf-title.orange-line {
-    position: relative;
-    z-index: 1;
+.more30__inf-title {
+    
 
-    h2 {
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 1;
-        color: #333333;
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        left: -2px;
-        bottom: 1px;
-        height: 5px;
-        width: 100%;
-        
-    }
     @media(min-width: 768px) {
         margin-bottom: 3px;
-        h2 {
-            font-weight: 700;
-            font-size: 25px;
-            
-        }
 
-        &::after {
-            content: "";
-            position: absolute;
-            width: 103%;
-            
-        }
     }
     @media(min-width:1200px) {
         margin-bottom: 0;
-        h2 {
-            font-weight: 700;
-            font-size: 36px;
-            
-            color: #333333;
-        }
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 2px;
-            height: 7px;
-            
-        }
     }
 }
 .more30__inf-subtitle {
     margin-bottom: 10px;
     p {
         font-family: Roboto-ThinItalic;
-        font-size: 17px;
+        font-size: $font-size-PM;
         line-height: 1.2;
         color: #000;
             
@@ -156,9 +123,7 @@
     @media(min-width:1200px) {
         margin-top: 8px;
         margin-bottom: 8px;
-        p {
-        font-size: 22px;
-        }
+       
          
     span {
         font-size: 30px;
@@ -185,7 +150,7 @@
     }
     @media(min-width:1200px) {
         p {
-            font-size: 17px;
+            font-size: $font-size-PM;
         }
     }
 }
@@ -210,7 +175,13 @@
         &:hover::after {
             width: 100%;
         }
+        &:active::after {
+            width: 100%;
+        }
         &:hover {
+            color: var(--pink);
+        }
+        &:active {
             color: var(--pink);
         }
     }

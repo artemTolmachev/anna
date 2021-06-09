@@ -1,7 +1,13 @@
 .consultation {
     padding: 50px 0 40px;
     background-color: #252525;
+    position: relative;
 
+    .light-btn {
+        border: 2px solid var(--pink);
+        background-color: #252525;
+        
+    }
     @media(min-width: 768px) {
     
     }
@@ -39,18 +45,18 @@
     margin-bottom: 25px;
     h2 {
         font: 100% $font-stack;
-        font-size: 18px;
+        font-size: $font-sizeX-h2;
         line-height: 1;
         color: #fff;
     }
     @media(min-width: 768px) {
         h2 {
-            font-size: 22px;
+            font-size: $font-sizeS-h2;
         }
     }
     @media(min-width:1200px) {
         h2 {
-            font-size: 36px;
+            font-size: $font-sizeL-h2;
         }
     }
 }
@@ -83,7 +89,7 @@
 .consultation__inf-text {
     p {
         font-weight: 300;
-        font-size: 14px;
+        font-size: $font-size-PS;
         line-height: 1.5;
         color: #BDBDBD;
         text-align: justify;

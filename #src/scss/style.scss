@@ -61,6 +61,25 @@
 $font-stack: Roboto, sans-serif;
 $font-montserrat: Montserrat Alternates, sans-serif;
 
+$font-sizeL-h2XL: 64px;
+
+
+$font-sizeL-h2: 40px;
+$font-sizeM-h2: 30px;
+$font-sizeS-h2: 28px;
+$font-sizeX-h2: 25px;
+$font-sizeXs-h2: 22px;
+
+$font-sizeL-h3: 32px;
+$font-sizeM-h3: 22px;
+$font-sizeS-h3: 20px;
+$font-sizeX-h3: 18px;
+
+$font-size-PL: 24px;
+$font-size-PM: 18px;
+$font-size-PS: 16px;
+$font-size-PX: 14px;
+
 @import "_header.scss";
 @import"_base.scss";
 @import"_cards.scss";
@@ -73,3 +92,10 @@ $font-montserrat: Montserrat Alternates, sans-serif;
 @import"_page-nav";
 @import"_toggle-menu.scss";
 @import"_mob-menu.scss";
+@import"_dropdown.scss";
+
+@import"_services";
+@import"_services-items";
+
+
+

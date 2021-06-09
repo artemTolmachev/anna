@@ -36,7 +36,7 @@
     
     @media(min-width: 768px) {
         margin-top: 0;
-         margin-left: 51px;
+         margin-left: 15px;
     }
 
     @media(min-width:1200px) {
@@ -48,19 +48,21 @@
 
 .cards__item {
 
-    padding: 30px 23px 42px;
-    width: 280px;
-    height: 346px;
+    padding: 20px 15px 15px;
+    height: 310px;
     text-align: center;
     position: relative;
     box-shadow: 0px 2px 25px 6px #D5E2FB;
     border-radius: 8px;
     color: #333333;
     
+    @media(min-width: 320px) {
+        padding: 20px 30px 15px;
+    }
     @media(min-width: 768px) {
         padding: 20px 17px 30px;
-        width: 196px;
-        height: 242px;
+        width: 222px;
+        height: 294px;
     }
     @media(min-width:992px) {
         padding: 30px 23px 42px;
@@ -76,19 +78,12 @@
     p {
         font-weight: 300;
         
-        font-size: 15px;
+        font-size: $font-size-PS;
         line-height: 1.2;
 
-        @media(min-width: 768px) {
-            font-size: 11px;
-    
-        }
-        @media(min-width:992px) {
-            font-size: 15px;
-
-        }
+        
         @media(min-width:1200px) {
-            font-size: 18px;
+            font-size: $font-size-PM;
             line-height: 1.5;
         }
     }
@@ -183,7 +178,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-bottom: 23px;
+    margin-bottom: 15px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -209,20 +204,17 @@
 
 }
 .cards__item-title {
-    margin-bottom: 25px;
-    font-size: 20px;
+    margin-bottom: 15px;
+    font-size: $font-sizeS-h3;
     line-height: 1;
 
     @media(min-width: 768px) {
     margin-bottom: 20px;
-    font-size: 14px;
+    font-size: $font-sizeX-h3;
     }
-    @media(min-width:992px) {
-        margin-bottom: 25px;
-        font-size: 20px;
-    }
+
     @media(min-width:1200px) {
     margin-bottom: 20px;
-    font-size: 24px;
+    font-size: $font-sizeM-h3;
     }
 }

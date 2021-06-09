@@ -1,0 +1,41 @@
+.fa-chevron-down {
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 14px;
+    color: white;
+    pointer-events: none;
+}
+.drop__btn {
+    display: block;
+}
+.dropdown {
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    li {
+        border-bottom: solid 2px var(--pink);
+    }
+}
+
+
+.dropdown-content {
+    padding-bottom: 5px;
+    display: none;
+    position: absolute;
+    top: 28px;
+    left: 2px;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+
+    a {
+    padding: 5px 10px;
+    font-weight: 200;
+    font-size: $font-size-PS;
+    transition: .2s;
+    }
+}
+
+.dropdown-content a:hover {background-color: #252525}
+
+.show {display:block;}

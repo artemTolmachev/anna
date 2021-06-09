@@ -1,0 +1,39 @@
+.for__mans {
+    padding: 71px 0;
+
+    .for__mans-title {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        
+}
+   
+}
+
+.for__mans-text  {
+    width: 100%;
+    font-weight: 300;
+    p {
+        text-align: justify;
+        font-size: $font-size-PM;
+        
+    }
+    p + p {
+        margin-top: 20px;
+    .question {
+        font-size: 19px;
+    font-weight: 500;
+    margin: 10px 0;
+    }
+    
+    
+    }
+    @media(min-width: 768px) {
+    width: 65%;
+    }
+   .question {
+        margin: 10px 0;
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}

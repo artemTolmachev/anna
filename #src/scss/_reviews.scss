@@ -1,18 +1,35 @@
 .reviews {
-    padding: 50px 0 100px;
-}
-.reviews__title.orange-line {
-    position: relative;
-    z-index: 1;
+    padding: 25px 0 0;
+    margin-bottom: 25px;
+    background: linear-gradient(270deg, rgba(255, 117, 131, 0.1) 0%, rgba(255, 255, 255, 0.13) 68.36%);
+    
+    span.orange-line {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 3px;
+            
+        }
+    }
+    @media(min-width:1200px) {
+        padding: 50px 0 100px;
+    }
+
 }
 .section-carousel {
     margin: 0 auto;
+    
 }
-.slider{
-    padding-left: 13px;
+
+.slider {
+    padding: 15px 13px;
     font-family: "Roboto-ThinItalic";
-    font-size: 18px;
-    line-height: 29px;
+    font-size: $font-size-PM;
+    line-height: 1.5;
+    background-color: #fff;
+    text-shadow: 0 0 #000;
+  
     &::after {
         content: "";
         position: absolute;
@@ -22,10 +39,22 @@
         left: 0;
         background-color: #B2B2B2;;
         }
+
+    @media(min-width:1200px) {
+        line-height: 2;
+    }
 }
 .reviews__title {
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+
+    @media(min-width: 768px) {
+    margin-bottom: 16px;
+    }
+    @media(min-width:1200px) {
+        margin-bottom: 40px;
+    }
+    
 }
 .owl-nav {
     position: relative;
@@ -63,7 +92,10 @@
     &:active {
         opacity: 0.5;
     }
-    
+    display: none;
+    @media(min-width: 1200px) {
+    display: block;
+    }
 }
 .owl-carousel .owl-nav button.owl-next {
     width: 20px;
@@ -97,27 +129,44 @@
     &:active {
         opacity: 0.5;
     }
-
+    display: none;
+    @media(min-width: 1200px) {
+    display: block;
+    }
 }
 .clients-name {
     margin-top: 10px;
-    width: 117px;
+    width: 86px;
     position: relative;
     font: 100% $font-stack;
-    font-size: 15px;
+    font-size: $font-size-PX;
     color: #333;
+
     &::after{
         content: "";
         position: absolute;
         width: 30px;
         height: 30px;
-        top: 0;
-        left: 122px;
+        top: -3px;
+        left: 93px;
         border-radius: 50%;
         border: 2px solid var(--pink);
         background-image: url(../img/icn/icon-dots.svg);
         background-repeat: no-repeat;
         background-position: center;
     
+    }
+   
+    @media(min-width:1200px) {
+        font-size: 15px;
+        width: 117px;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 0;
+            left: 122px;
+        }
     }
 }

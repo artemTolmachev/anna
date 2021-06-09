@@ -1,7 +1,4 @@
 
-
-
-
 $(document).ready(function(){
     const toggleMenu = document.querySelector('.toggle-menu'); //иконкагамбургер
     const mobMenu = document.querySelector('.mobile-menu'); //мобильное меню

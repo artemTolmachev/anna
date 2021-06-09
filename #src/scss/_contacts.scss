@@ -1,10 +1,10 @@
 .contacts {
-    padding: 48px 0 50px;
+    padding: 60px 0 20px;
     color: #333333;
     background: linear-gradient(180deg, rgba(213, 226, 251, 0.28) 0%, rgba(213, 226, 251, 0) 100%);
 
     @media(min-width: 768px) {
-        padding: 100px 0 50px;
+        padding: 100px 0 40px;
     }
     @media(min-width:1200px) {
         padding: 100px 0 50px;
@@ -27,60 +27,27 @@
     width: 100%;
 
     @media(min-width: 768px) {
-        width: 47%;
+        width: 50%;
 
     }
-    @media(min-width:1200px) {
-        width: 47%;
-    }
+ 
 }
-.contacts__left-title {
-    
+.contacts__left-title{
     z-index: 1;
     max-width: 320px;
     margin: 0 auto;
     margin-bottom: 15px;
+    position: relative;
 
-   
-
-    h2.orange-line {
-        position: relative;
-        font-size: 20px;
-        line-height: 1;
-        font-weight: 700;
-        color: #333;
-        &::after {
-            content: "";
-            position: absolute;
-            left: -2px;
-            bottom: 0px;
-            width: 103%;
-            height: 7px;
-        }
-    }
    
     @media(min-width: 768px) {
         max-width: 100%;
         margin-left: 0;
         margin-bottom: 25px;
-        h2.orange-line {
-            font-size: 25px;
-            &::after {
-                content: "";
-                position: absolute;
-                bottom: 1px;
-            }
-        }
        
-        
     }
     @media(min-width:1200px) {
         margin-bottom: 42px;
-        h2.orange-line {
-            font-size: 36px;
-            
-        }
-        
     }
 }
 .contacts__left-subtitle {
@@ -93,28 +60,36 @@
     }
     @media(min-width: 768px) {
         margin-bottom: 10px;
+        h3 {
+            font-size: $font-sizeS-h3;
+        }
         
     }
-    @media(min-width:1200px) {
+    @media(min-width: 992px) {
         margin-bottom: 15px;
         
         h3 {
-            font-size: 24px;
+            font-size: $font-sizeS-h3;
         }
     }
 }
 .contacts__list {
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     a {
+        display: flex;
+        flex-direction: column;
         font: $font-montserrat;
         font-weight: 500;
-        font-size: 14px;
+        font-size: $font-size-PS;
         line-height: 1;
         color: var(--pink);
         transition: .2s ease-in;
 
         &:hover span {
+            color: var(--blue);
+        }
+        &:active span {
             color: var(--blue);
         }
     }
@@ -130,10 +105,9 @@
     }
     li:first-child {
         span {
-            margin-left: 12px;
-
+            
             @media(min-width: 768px) {
-    
+                margin-left: 12px;
             }
             @media(min-width:1200px) {
             margin-left: 40px;
@@ -141,12 +115,12 @@
         }
     }
     span {
-        margin-left: 30px;
+        
         color: #B2B2B2;
         transition: .2s;
 
         @media(min-width: 768px) {
-        
+            margin-left: 30px;
         }
         @media(min-width:1200px) {
             margin-left: 62px;
@@ -154,13 +128,17 @@
     } 
     @media(min-width: 768px) {
         margin-bottom: 15px;
-       
+        
+       a {
+        flex-direction: row;
+        font-size: $font-sizeX-h3;
+       }
     }
-    @media(min-width:1200px) {
+    @media(min-width: 992px) {
         margin-bottom: 28px;
         a {
-            font-size: 18px;
-    }
+            font-size: $font-size-PM;
+        }
 }
 }
 .map-holder {
@@ -169,11 +147,14 @@
     box-shadow: 9px -1px 34px 6px rgba(140, 178, 252, 0.19);
 
     @media(min-width: 768px) {
-        max-width: 200px;
+        max-width: 300px;
         height: 130px;
     }
-    @media(min-width:1200px) {
+    @media(min-width: 992px) {
         max-width: 329px;
+        height: 132px;
+    }
+    @media(min-width:1200px) {
         height: 213px;
     }
 
@@ -183,13 +164,8 @@
     margin-top: 20px;
 
     @media(min-width: 768px) {
-        width: 54%;
-        max-width: 370px;
-        margin-top: 0;
-    }
-    @media(min-width:1200px) {
-        width: 54%;
-        max-width: 600px;
+        max-width: unset;
+        width: 50%;
         margin-top: 0;
     }
 }
@@ -197,9 +173,14 @@
     .social__linc {
         display: flex;
         margin-top: 15px;
+        @media(min-width: 768px) {
+            margin-top: 15px;
+        }
+        @media(min-width:1200px) {
+        
+        }
             a + a {
                 margin-left: 10px;
-        
             }
         
             a {
@@ -216,61 +197,51 @@
                 &:hover {
                     background-color: var(--orange);
                 }
-        
+                &:hover path {
+                    fill: #fff;
+                }
+                &:active {
+                    background-color: var(--orange);
+                }
+                &:active path{
+                    fill: #fff;
+                }
                 &:first-child {
                     padding-top: 2px;
                 }
                 &:nth-child(4) {
                     padding-right: 3px;
-                    margin-left: 16px;
                     padding-top: 2px;
+                    margin-left: 4px;
 
+        
+                        margin-left: 16px;
+                    
+                    
                 }
+               
             }
             
         
            svg {
-               width: 28px;
-
-               @media(min-width: 768px) {
-                width: 22px;
-            }
-            @media(min-width:1200px) {
-                width: 25px;
-            }
+               width: 25px;
            }
 
           .fa-viber {
             width: 30px;
 
-            @media(min-width: 768px) {
-                width: 25px;
-            }
-            @media(min-width:1200px) {
-                width: 30px;
-            }
           }
         
            .fa-facebook-f {
             width: 16px;
 
-            @media(min-width: 768px) {
-                width: 14px;
-            }
-            @media(min-width:1200px) {
-            
-            }
            }
         
            path {
                fill: #333;
+                transition: .2s ease-in;
            }
-        
         }
-        @media(min-width: 768px) {
-    margin-top: 0;
-        }
-        @media(min-width:1200px) {
-            margin-top: 15px;
-        }
+
+    
     }
